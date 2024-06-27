@@ -1,6 +1,7 @@
 {
     "about": {
         "title": "About Me",
+        "name": "Ilya Silkin",
         "description": ["Web Developer", "Frontend Developer", "React Developer"]
     },
     "projects": {

@@ -19,6 +19,12 @@ h2, p b, .typewriter {
     text-shadow: 0 0 5px #00bfff, 0 0 10px #00bfff, 0 0 20px #00bfff, 0 0 30px #00bfff, 0 0 40px #00bfff, 0 0 50px #00bfff, 0 0 60px #00bfff; /* Неоновое свечение */
 }
 
+h3 {
+    font-size: 1.2em;
+    color: #ffffff; /* Цвет текста */
+    text-shadow: 0 0 5px #00bfff, 0 0 10px #00bfff, 0 0 20px #00bfff, 0 0 30px #00bfff, 0 0 40px #00bfff, 0 0 50px #00bfff, 0 0 60px #00bfff; /* Неоновое свечение */
+}
+
 .cursor {
     display: inline-block;
     margin-left: 2px;
