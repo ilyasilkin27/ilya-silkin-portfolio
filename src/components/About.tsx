@@ -9,9 +9,9 @@ const About: React.FC = () => {
 
     return (
         <section id="about">
-            <h2>{t('about.title')}</h2>
+            <h2 className="neon-dark">{t('about.title')}</h2>
             <p>
-                <b>
+                <b className="neon-dark">
                     <Typewriter texts={descriptions} />
                 </b>
             </p>

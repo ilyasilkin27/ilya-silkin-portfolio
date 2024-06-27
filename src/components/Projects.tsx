@@ -34,11 +34,11 @@ const Projects: React.FC = () => {
 
     return (
         <section id="projects">
-            <h2>{t('projects.title')}</h2>
+            <h2 className="neon-dark">{t('projects.title')}</h2>
             <div className="project-list">
                 {projects.map((project, index) => (
                     <div key={index} className="project-card">
-                        <h3>{t(`projects.${project.key}`)}</h3>
+                        <h3 className="neon-dark">{t(`projects.${project.key}`)}</h3>
                         <p>{t(`projects.${project.key}Description`)}</p>
                         <a href={project.link} target="_blank" rel="noopener noreferrer">
                             <button>{t('button.viewCode')}</button>

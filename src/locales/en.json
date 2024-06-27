@@ -1,7 +1,7 @@
 {
     "about": {
         "title": "About Me",
-        "description": ["Web Developer", "React Developer", "Frontend developer"]
+        "description": ["Web Developer", "Frontend Developer", "React Developer"]
     },
     "projects": {
         "title": "My Projects",
@@ -20,6 +20,7 @@
     },
     "button": {
         "viewCode": "View Code",
-        "switchLanguage": "Switch Language"
+        "switchLanguage": "Switch Language",
+        "switchTheme": "Switch Theme"
     }
 }
