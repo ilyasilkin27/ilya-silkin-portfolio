@@ -1,8 +1,8 @@
 #about {
-    padding: 50px;
+    padding: 20px;
     margin: 20px;
-    min-width: 200px;
     max-width: 800px;
+    width: 100%;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -32,5 +32,29 @@ p b, .typewriter {
     }
     50.01%, 100% {
         opacity: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    #about {
+        padding: 30px;
+        margin: 10px;
+        width: calc(100% - 20px);
+    }
+
+    p b, .typewriter {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    #about {
+        padding: 20px;
+        margin: 5px;
+        width: calc(100% - 10px);
+    }
+
+    p b, .typewriter {
+        font-size: 1em;
     }
 }

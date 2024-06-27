@@ -3,16 +3,29 @@ import '../styles/projects.css';
 
 const projects = [
     {
-        title: 'Project 1',
-        description: 'Description for project 1',
-        link: 'https://example.com/project1'
+        title: 'Аналог Slack-чата на React',
+        description: 'Проект представляет собой аналог популярного чата Slack, написанный на React.',
     },
     {
-        title: 'Project 2',
-        description: 'Description for project 2',
-        link: 'https://example.com/project2'
+        title: 'Приложение на TypeScript и React',
+        description: 'Приложение отображает список постов на странице, используя TypeScript и React.',
     },
-    // Add more projects here
+    {
+        title: 'Автоматизированная регистрация студентов',
+        description: 'Приложение для автоматизированной регистрации новых студентов с использованием API AmoCRM и Keycloak.',
+    },
+    {
+        title: 'Консольное приложение для парсинга расписания',
+        description: 'Консольное приложение, которое парсит сайт расписания и подсчитывает количество часов у преподавателей (JS и сторонние библиотеки).',
+    },
+    {
+        title: 'RSS-агрегатор',
+        description: 'Приложение RSS-агрегатор с деплоем на Vercel. Проект нацелен на отработку таких навыков, как: работа с DOM, webpack, Bootstrap, AJAX.',
+    },
+    {
+        title: 'Консольное приложение для вычисления различий в JSON/YML/YAML',
+        description: 'Приложение принимает JSON/YML/YAML документы и вычисляет их различия. Проект нацелен на отработку навыков парсинга и форматирования данных, проектирования архитектуры приложений, работы с деревьями и написания unit-тестов.',
+    },
 ];
 
 const Projects: React.FC = () => {
@@ -24,7 +37,6 @@ const Projects: React.FC = () => {
                     <div key={index} className="project-card">
                         <h3>{project.title}</h3>
                         <p>{project.description}</p>
-                        <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
                     </div>
                 ))}
             </div>
