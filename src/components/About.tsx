@@ -43,6 +43,7 @@ const About: React.FC = () => {
     return (
         <section id="about">
             <h2>About Me</h2>
+            <h3>Ilya Silkin</h3>
             <p>
                 <Typewriter texts={['Web Developer', 'Frontend Developer', 'React Developer']} />
             </p>

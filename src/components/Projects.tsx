@@ -44,7 +44,7 @@ const Projects: React.FC = () => {
                         <h3>{project.title}</h3>
                         <p>{project.description}</p>
                         <a href={project.link} target="_blank" rel="noopener noreferrer">
-                            <button>Код</button>
+                            <button>Посмотреть код</button>
                         </a>
                     </div>
                 ))}
