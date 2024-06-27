@@ -66,3 +66,22 @@ body.light button {
 body.light button:hover {
     background-color: #ff79b0;
 }
+
+body.light .theme-switcher, body.light .language-switcher {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #ff4081;
+    border: 2px solid #ff4081;
+    border-radius: 50px;
+    text-shadow: 0 0 5px #ff4081, 0 0 10px #ff4081, 0 0 20px #ff4081, 0 0 30px #ff4081, 0 0 40px #ff4081, 0 0 50px #ff4081, 0 0 60px #ff4081; /* Неоновое свечение */
+    animation: pulse-light 1.5s infinite;
+}
+
+body.light .theme-switcher:hover, body.light .language-switcher:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    transform: scale(1.1);
+}
+
+.language-switcher {
+    top: 70px; /* Отступ между кнопками */
+    right: 20px;
+}
