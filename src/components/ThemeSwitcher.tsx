@@ -27,8 +27,8 @@ const ThemeSwitcher: React.FC = () => {
     }, []);
 
     return (
-        <button
-            className={`theme-switcher ${isDark ? 'dark' : 'light'}`}
+        <button 
+            className={`theme-switcher ${isDark ? 'dark' : 'light'}`} 
             onClick={toggleTheme}
         >
             {t('button.switchTheme')}
