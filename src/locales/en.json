@@ -1,0 +1,25 @@
+{
+    "about": {
+        "title": "About Me",
+        "description": ["Web Developer", "React Developer", "Frontend developer"]
+    },
+    "projects": {
+        "title": "My Projects",
+        "project1": "Slack Chat Clone in React",
+        "project1Description": "A clone of the popular Slack chat built with React.",
+        "project2": "TypeScript and React Application",
+        "project2Description": "An application that displays a list of posts using TypeScript and React.",
+        "project3": "Automated Student Registration",
+        "project3Description": "An application for automated student registration using AmoCRM API and Keycloak.",
+        "project4": "Console Application for Schedule Parsing",
+        "project4Description": "A console application that parses the schedule website and counts the number of hours for teachers (JS and external libraries).",
+        "project5": "RSS Aggregator",
+        "project5Description": "An RSS aggregator application deployed on Vercel. The project focuses on DOM manipulation, webpack, Bootstrap, and AJAX.",
+        "project6": "Console Application for JSON/YML/YAML Diff",
+        "project6Description": "A console application that takes JSON/YML/YAML documents and calculates their differences. The project focuses on parsing and formatting data, application architecture design, working with trees, and writing unit tests."
+    },
+    "button": {
+        "viewCode": "View Code",
+        "switchLanguage": "Switch Language"
+    }
+}

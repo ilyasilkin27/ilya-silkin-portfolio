@@ -1,51 +1,19 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 import '../styles/about.css';
-
-const Typewriter: React.FC<{ texts: string[] }> = ({ texts }) => {
-    const [text, setText] = useState('');
-    const [index, setIndex] = useState(0);
-    const [isDeleting, setIsDeleting] = useState(false);
-    const [speed, setSpeed] = useState(200);
-
-    useEffect(() => {
-        const handleTyping = () => {
-            const currentText = texts[index];
-            const updatedText = isDeleting
-                ? currentText.substring(0, text.length - 1)
-                : currentText.substring(0, text.length + 1);
-
-            setText(updatedText);
-
-            if (!isDeleting && updatedText === currentText) {
-                setTimeout(() => setIsDeleting(true), 2000);
-            } else if (isDeleting && updatedText === '') {
-                setIsDeleting(false);
-                setIndex((prev) => (prev + 1) % texts.length);
-            }
-
-            setSpeed(isDeleting ? 100 : 200);
-        };
-
-        const timer = setTimeout(handleTyping, speed);
-
-        return () => clearTimeout(timer);
-    }, [text, isDeleting, speed, texts, index]);
-
-    return (
-        <span className="typewriter">
-            {text}
-            <span className="cursor">&nbsp;</span>
-        </span>
-    );
-};
+import Typewriter from './Typewriter';
 
 const About: React.FC = () => {
+    const { t } = useTranslation();
+    const descriptions: string[] = t('about.description', { returnObjects: true }) as string[];
+
     return (
         <section id="about">
-            <h2>About Me</h2>
-            <h3>Ilya Silkin</h3>
+            <h2>{t('about.title')}</h2>
             <p>
-                <Typewriter texts={['Web Developer', 'Frontend Developer', 'React Developer']} />
+                <b>
+                    <Typewriter texts={descriptions} />
+                </b>
             </p>
         </section>
     );

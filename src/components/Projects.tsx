@@ -1,50 +1,47 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import '../styles/projects.css';
 
 const projects = [
     {
-        title: 'Аналог Slack-чата на React',
-        description: 'Проект представляет собой аналог популярного чата Slack, написанный на React.',
+        key: 'project1',
         link: 'https://github.com/peperopuripuri/react-chat',
     },
     {
-        title: 'Приложение на TypeScript и React',
-        description: 'Приложение отображает список постов на странице, используя TypeScript и React.',
+        key: 'project2',
         link: 'https://github.com/ilyasilkin27/react-posts-app',
     },
     {
-        title: 'Автоматизированная регистрация студентов',
-        description: 'Приложение для автоматизированной регистрации новых студентов с использованием API AmoCRM и Keycloak.',
+        key: 'project3',
         link: 'https://github.com/ilyasilkin27/reg-new-student-script',
     },
     {
-        title: 'Консольное приложение для парсинга расписания',
-        description: 'Консольное приложение, которое парсит сайт расписания и подсчитывает количество часов у преподавателей (JS и сторонние библиотеки).',
+        key: 'project4',
         link: 'https://github.com/ilyasilkin27/proofreading-script',
     },
     {
-        title: 'RSS-агрегатор',
-        description: 'Приложение RSS-агрегатор с деплоем на Vercel. Проект нацелен на отработку таких навыков, как: работа с DOM, webpack, Bootstrap, AJAX.',
+        key: 'project5',
         link: 'https://github.com/peperopuripuri/RSS-Agregator',
     },
     {
-        title: 'Консольное приложение для вычисления различий в JSON/YML/YAML',
-        description: 'Приложение принимает JSON/YML/YAML документы и вычисляет их различия. Проект нацелен на отработку навыков парсинга и форматирования данных, проектирования архитектуры приложений, работы с деревьями и написания unit-тестов.',
+        key: 'project6',
         link: 'https://github.com/peperopuripuri/Difference-Calculator',
     },
 ];
 
 const Projects: React.FC = () => {
+    const { t } = useTranslation();
+
     return (
         <section id="projects">
-            <h2>My Projects</h2>
+            <h2>{t('projects.title')}</h2>
             <div className="project-list">
                 {projects.map((project, index) => (
                     <div key={index} className="project-card">
-                        <h3>{project.title}</h3>
-                        <p>{project.description}</p>
+                        <h3>{t(`projects.${project.key}`)}</h3>
+                        <p>{t(`projects.${project.key}Description`)}</p>
                         <a href={project.link} target="_blank" rel="noopener noreferrer">
-                            <button>Посмотреть код</button>
+                            <button>{t('button.viewCode')}</button>
                         </a>
                     </div>
                 ))}
