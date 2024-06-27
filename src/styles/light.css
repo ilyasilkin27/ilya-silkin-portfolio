@@ -33,7 +33,7 @@ body.light .App {
 
 body.light h2, body.light p b, body.light .typewriter, body.light h3 {
     font-size: 1.5em;
-    color: #ff004c; /* Цвет текста */
+    color: #ffffff; /* Цвет текста */
     text-shadow: 0 0 5px #ff4081, 0 0 10px #ff4081, 0 0 20px #ff4081, 0 0 30px #ff4081, 0 0 40px #ff4081, 0 0 50px #ff4081, 0 0 60px #ff4081; /* Неоновое свечение */
     animation: pulse-light 1.5s infinite;
 }
