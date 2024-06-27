@@ -1,22 +1,48 @@
 .theme-switcher {
-    background-color: #ff4081;
-    color: #fff;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
     font-size: 1em;
-    text-shadow: 0 0 5px #ff4081, 0 0 10px #ff4081, 0 0 20px #ff4081, 0 0 30px #ff4081, 0 0 40px #ff4081, 0 0 50px #ff4081, 0 0 60px #ff4081; /* Неоновое свечение */
-    animation: pulse 1.5s infinite;
     margin-bottom: 20px; /* Добавляем отступ снизу */
 }
 
-.theme-switcher:hover {
+.theme-switcher.dark {
+    background-color: #00bfff;
+    color: #fff;
+    text-shadow: 0 0 5px #00bfff, 0 0 10px #00bfff, 0 0 20px #00bfff, 0 0 30px #00bfff, 0 0 40px #00bfff, 0 0 50px #00bfff, 0 0 60px #00bfff; /* Неоновое свечение */
+    animation: pulse-dark 1.5s infinite;
+}
+
+.theme-switcher.dark:hover {
+    background-color: #008ecc;
+}
+
+.theme-switcher.light {
+    background-color: #ff4081;
+    color: #fff;
+    text-shadow: 0 0 5px #ff4081, 0 0 10px #ff4081, 0 0 20px #ff4081, 0 0 30px #ff4081, 0 0 40px #ff4081, 0 0 50px #ff4081, 0 0 60px #ff4081; /* Неоновое свечение */
+    animation: pulse-light 1.5s infinite;
+}
+
+.theme-switcher.light:hover {
     background-color: #ff79b0;
 }
 
-@keyframes pulse {
+@keyframes pulse-dark {
+    0% {
+        text-shadow: 0 0 5px #00bfff, 0 0 10px #00bfff, 0 0 20px #00bfff, 0 0 30px #00bfff, 0 0 40px #00bfff, 0 0 50px #00bfff, 0 0 60px #00bfff;
+    }
+    50% {
+        text-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff, 0 0 30px #00bfff, 0 0 40px #00bfff, 0 0 50px #00bfff, 0 0 60px #00bfff, 0 0 70px #00bfff;
+    }
+    100% {
+        text-shadow: 0 0 5px #00bfff, 0 0 10px #00bfff, 0 0 20px #00bfff, 0 0 30px #00bfff, 0 0 40px #00bfff, 0 0 50px #00bfff, 0 0 60px #00bfff;
+    }
+}
+
+@keyframes pulse-light {
     0% {
         text-shadow: 0 0 5px #ff4081, 0 0 10px #ff4081, 0 0 20px #ff4081, 0 0 30px #ff4081, 0 0 40px #ff4081, 0 0 50px #ff4081, 0 0 60px #ff4081;
     }
