@@ -2,20 +2,25 @@
     width: 60px;
     height: 30px;
     background-color: #ccc;
-    border-radius: 15px;
     position: relative;
     cursor: pointer;
     border: none;
     outline: none;
     transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
 }
 
 .switcher.on {
     background-color: #333;
+    color: #fff;
 }
 
 .switcher.off {
     background-color: #ddd;
+    color: #333;
 }
 
 .slider {
@@ -25,7 +30,6 @@
     width: 24px;
     height: 24px;
     background-color: #fff;
-    border-radius: 50%;
     transition: left 0.3s;
 }
 
@@ -35,4 +39,10 @@
 
 .switcher.off .slider {
     left: 33px;
+}
+
+.language-icon {
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 3px;
 }
