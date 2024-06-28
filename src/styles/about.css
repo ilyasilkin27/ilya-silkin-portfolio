@@ -13,6 +13,11 @@
     text-align: center;
 }
 
+.switchers {
+    display: flex;
+    justify-content: space-between;
+}
+
 h2, p b, .typewriter {
     font-size: 1.5em;
     color: #ffffff; /* Цвет текста */
