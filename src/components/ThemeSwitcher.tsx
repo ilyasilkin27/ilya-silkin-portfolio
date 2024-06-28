@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import '../styles/themeSwitcher.css';
+import '../styles/switchers.css';
 
 const ThemeSwitcher: React.FC = () => {
     const { t } = useTranslation();
@@ -12,13 +12,6 @@ const ThemeSwitcher: React.FC = () => {
         body.classList.toggle('dark', !isCurrentlyDark);
         body.classList.toggle('light', isCurrentlyDark);
         setIsDark(!isCurrentlyDark);
-
-        // Переключаем классы для всех элементов с неоном
-        const elements = document.querySelectorAll('.neon-dark, .neon-light');
-        elements.forEach(el => {
-            el.classList.toggle('neon-dark', !isCurrentlyDark);
-            el.classList.toggle('neon-light', isCurrentlyDark);
-        });
     };
 
     useEffect(() => {
@@ -27,11 +20,11 @@ const ThemeSwitcher: React.FC = () => {
     }, []);
 
     return (
-        <button 
-            className={`theme-switcher ${isDark ? 'dark' : 'light'}`} 
+        <button
+            className={`switcher ${isDark ? 'on' : 'off'}`}
             onClick={toggleTheme}
         >
-            {t('button.switchTheme')}
+            <div className="slider"></div>
         </button>
     );
 };

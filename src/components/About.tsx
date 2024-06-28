@@ -17,7 +17,7 @@ const About: React.FC = () => {
             </div>
             <h2>{t('about.name')}</h2>
             <p>
-                <b className="neon-dark">
+                <b>
                     <Typewriter texts={descriptions} />
                 </b>
             </p>
