@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import '../styles/switchers.css';
 
 const LanguageSwitcher: React.FC = () => {
-    const { t, i18n } = useTranslation();
+    const { i18n } = useTranslation();
     const [isEnglish, setIsEnglish] = useState(true);
 
     const toggleLanguage = () => {
@@ -21,7 +21,7 @@ const LanguageSwitcher: React.FC = () => {
             className={`switcher ${isEnglish ? 'on' : 'off'}`}
             onClick={toggleLanguage}
         >
-            <span className="language-icon">RU</span>
+            <span className="language-icon">РУ</span>
             <div className="slider"></div>
             <span className="language-icon">EN</span>
         </button>
