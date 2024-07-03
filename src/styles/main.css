@@ -38,7 +38,6 @@ body.light {
 #about {
     padding: 20px;
     font-size: 2rem;
-    border-bottom: 1px solid #fff;
     min-width: 600px;
 }
 
@@ -58,7 +57,6 @@ body.light {
     flex-direction: row;
     align-items: center;
     gap: 20px;
-    padding: 20px;
     transition: background-color 0.3s;
 }
 
@@ -72,6 +70,33 @@ body.light {
 .project-img {
     width: 900px;
     height: auto;
+    border: 1px solid #1f1f1f;
+}
+
+.project-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset calc(-1 * var(--itemWidth)) calc(-1 * var(--itemWidth)) 0 black,
+                inset var(--itemWidth) calc(-1 * var(--itemWidth)) 0 green,
+                inset calc(-1 * var(--itemWidth)) var(--itemWidth) 0 blue,
+                inset var(--itemWidth) var(--itemWidth) 0 yellow,
+                0 0 20px silver;
+    transition: box-shadow ease-in-out 0.6s, color ease-in-out 0.5s;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.project-img:hover::before {
+    box-shadow: inset 0 0 0 transparent,
+                inset 0 0 0 transparent,
+                inset 0 0 0 transparent,
+                inset 0 0 0 transparent,
+                0 0 20px silver;
+    opacity: 1;
 }
 
 .btns {
