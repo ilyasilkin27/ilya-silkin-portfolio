@@ -21,10 +21,10 @@ body.light {
 
 .switchers {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 2%;
+    right: 10%;
     display: flex;
-    gap: 10px;
+    gap: 10%;
 }
 
 .App {
@@ -49,14 +49,14 @@ body.light {
 .project-list {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 100px;
 }
 
 .project-card {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 20px;
+    gap: 80px;
     transition: background-color 0.3s;
 }
 
@@ -110,7 +110,6 @@ body.light {
   }
 }
 
-
 .btns {
     display: flex;
     gap: 10px;
@@ -124,7 +123,7 @@ body.light {
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
     font-family: 'Bebas Neue', 'Oswald';
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .viewCode:hover, .demo:hover {

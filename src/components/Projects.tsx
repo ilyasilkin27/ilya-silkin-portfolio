@@ -11,11 +11,14 @@ const projects = [
     },
     {
         key: 'project2',
-        link: 'https://github.com/ilyasilkin27/react-posts-app',
+        link: 'https://github.com/ilyasilkin27/reg-new-student-script',
     },
     {
         key: 'project3',
-        link: 'https://github.com/ilyasilkin27/reg-new-student-script',
+        link: 'https://github.com/ilyasilkin27/react-posts-app',
+        demo: 'https://ilyasilkin27.github.io/react-posts-app/',
+        img: require('../fixtures/react-post-app.png'),
+        alt: 'react-post-app',
     },
     {
         key: 'project4',
@@ -24,10 +27,14 @@ const projects = [
     {
         key: 'project5',
         link: 'https://github.com/peperopuripuri/RSS-Agregator',
+        demo: 'https://frontend-project-11-inky.vercel.app/',
+        img: require('../fixtures/rss-agregator.png'),
+        alt: 'rss-agregator',
     },
     {
         key: 'project6',
         link: 'https://github.com/peperopuripuri/Difference-Calculator',
+        demo: 'https://asciinema.org/a/552063',
     },
 ];
 
@@ -39,7 +46,14 @@ const Projects: React.FC = () => {
             <h2>{t('projects.title')}</h2>
             <div className="project-list">
                 {projects.map((project, index) => (
-                    <div key={index} className="project-card">
+                    <div key={index} className={`project-card ${index % 2 === 0 ? 'image-left' : 'image-right'}`}>
+                        {project.img ? (
+                            <div className="wrap-image">
+                                <img src={project.img} alt={project.alt || 'Project Image'} className="project-img" />
+                            </div>
+                        ) : (
+                            <div className="no-image"></div>
+                        )}
                         <div className="project-info">
                             <h3>{t(`projects.${project.key}`)}</h3>
                             <p>{t(`projects.${project.key}Description`)}</p>
@@ -53,9 +67,6 @@ const Projects: React.FC = () => {
                                     </a>
                                 )}
                             </div>
-                        </div>
-                        <div className="wrap-image">
-                            <img src={project.img} alt={project.alt} className="project-img" />
                         </div>
                     </div>
                 ))}
