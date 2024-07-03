@@ -47,6 +47,22 @@ body.light {
     font-size: 1.5rem;
 }
 
+.viewCode {
+    background-color: #1f1f1f;
+    color: #fff;
+    border: 1px solid #1f1f1f;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    font-family: 'Bebas Neue', 'Oswald';
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #1f1f1f;
+}
+
 ::-webkit-scrollbar {
     width: 20px;
     height: 20px;

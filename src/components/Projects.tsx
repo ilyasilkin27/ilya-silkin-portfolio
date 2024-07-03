@@ -40,7 +40,7 @@ const Projects: React.FC = () => {
                         <h3>{t(`projects.${project.key}`)}</h3>
                         <p>{t(`projects.${project.key}Description`)}</p>
                         <a href={project.link} target="_blank" rel="noopener noreferrer">
-                            <button>{t('button.viewCode')}</button>
+                            <button className='viewCode'>{t('button.viewCode')}</button>
                         </a>
                     </div>
                 ))}
