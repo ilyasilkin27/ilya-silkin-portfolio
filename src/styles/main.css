@@ -30,36 +30,36 @@ body.light {
 .App {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     min-height: 100vh;
 }
 
 #about {
-    padding: 20px;
+    padding: 0 10%;
     font-size: 2rem;
     min-width: 600px;
 }
 
 .tech-stack-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 10%;
 }
 
 .tech-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 60px;
-  color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 60px;
+    color: #333;
 }
 
 .tech-name {
-  margin-top: 10px;
-  font-size: 16px;
+    margin-top: 10px;
+    font-size: 16px;
 }
 
 #projects {
@@ -93,15 +93,17 @@ body.light {
 }
 
 .project-img {
-    width: 900px;
+    width: 100%;
     height: auto;
     border: 1px solid #1f1f1f;
 }
 
 .wrap-image {
-  position: relative;
-  &::before,
-  &::after {
+    position: relative;
+}
+
+.wrap-image::before,
+.wrap-image::after {
     content: "";
     width: 100%;
     height: 100%;
@@ -109,26 +111,27 @@ body.light {
     z-index: -1;
     border: 2px solid rgb(0, 255, 213);
     transition: all .25s ease-out;
-  }
-  &::before {
+}
+
+.wrap-image::before {
     background-color: rgb(0, 255, 191);
     top: -15px;
     left: -15px;
-  }
-  &::after {
+}
+
+.wrap-image::after {
     bottom: -15px;
     right: -15px;
-  }
-  &:hover {
-    &::before {
-      top: 15px;
-      left: 15px;
-    }
-    &::after {
-      bottom: 15px;
-      right: 15px;
-    }
-  }
+}
+
+.wrap-image:hover::before {
+    top: 15px;
+    left: 15px;
+}
+
+.wrap-image:hover::after {
+    bottom: 15px;
+    right: 15px;
 }
 
 .btns {
@@ -172,4 +175,96 @@ body.light {
 
 ::-webkit-scrollbar-thumb:active {
     background: #333;
+}
+
+/* Media Queries for Mobile Devices */
+
+@media (max-width: 768px) {
+    .switchers {
+        right: 5%;
+    }
+
+    #about {
+        padding: 0 5%;
+        font-size: 1.5rem;
+        min-width: 100%;
+    }
+
+    .tech-stack-container {
+        padding: 0 5%;
+    }
+
+    #projects {
+        padding: 10px 5%;
+        font-size: 1.2rem;
+    }
+
+    .project-list {
+        gap: 50px;
+    }
+
+    .project-card {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .project-info p {
+        width: 100%;
+    }
+
+    .project-img {
+        width: 100%;
+    }
+
+    .btns {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .switchers {
+        right: 2%;
+    }
+
+    #about {
+        padding: 0 2%;
+        font-size: 1.2rem;
+        min-width: 100%;
+    }
+
+    .tech-stack-container {
+        padding: 0 2%;
+    }
+
+    #projects {
+        padding: 10px 2%;
+        font-size: 1rem;
+    }
+
+    .project-list {
+        gap: 20px;
+    }
+
+    .project-card {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .project-info p {
+        width: 100%;
+    }
+
+    .project-img {
+        width: 100%;
+    }
+
+    .btns {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .viewCode, .demo {
+        padding: 5px 10px;
+        font-size: 1rem;
+    }
 }

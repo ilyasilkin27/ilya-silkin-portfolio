@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Oswald:wght@200..700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+.contact-me {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0 20px;
+  margin: 0;
+}
+
+.contact-item {
+  margin: 0 15px;
+}
+
+.contact-link {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-link i {
+  font-size: 2rem;
+}
+
+.contact-link:hover {
+  color: rgb(0, 255, 191);
+}
