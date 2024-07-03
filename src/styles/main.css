@@ -27,18 +27,14 @@ body, html {
     min-height: 100vh;
 }
 
-.about, .projects {
-    width: 100%;
-    text-align: center;
+#about {
     padding: 20px;
-    box-sizing: border-box;
-}
-
-.about {
     font-size: 2rem;
     border-bottom: 1px solid #fff;
+    min-width: 600px;
 }
 
-.projects {
+#projects {
+    padding: 20px 10%;
     font-size: 1.5rem;
 }
