@@ -1,12 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Oswald:wght@200..700&display=swap');
 
 body, html {
     margin: 0;
     padding: 0;
     background-color: #000;
     color: #fff;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bebas Neue', 'Oswald';
     height: 100%;
+    position: relative;
+}
+
+.switchers {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
 }
 
 .App {
