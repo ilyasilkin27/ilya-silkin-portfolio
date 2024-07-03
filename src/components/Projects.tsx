@@ -40,15 +40,21 @@ const Projects: React.FC = () => {
             <div className="project-list">
                 {projects.map((project, index) => (
                     <div key={index} className="project-card">
-                        <h3>{t(`projects.${project.key}`)}</h3>
-                        <p>{t(`projects.${project.key}Description`)}</p>
-                        <img src={project.img} alt={project.alt}/>
-                        <a href={project.link} target="_blank" rel="noopener noreferrer">
-                            <button className='viewCode'>{t('button.viewCode')}</button>
-                        </a>
-                        <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                            <button className='demo'>{t('button.demo')}</button>
-                        </a>
+                        <div className="project-info">
+                            <h3>{t(`projects.${project.key}`)}</h3>
+                            <p>{t(`projects.${project.key}Description`)}</p>
+                            <div className="btns">
+                                <a href={project.link} target="_blank" rel="noopener noreferrer">
+                                    <button className='viewCode'>{t('button.viewCode')}</button>
+                                </a>
+                                {project.demo && (
+                                    <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                                        <button className='demo'>{t('button.demo')}</button>
+                                    </a>
+                                )}
+                            </div>
+                        </div>
+                        {project.img && <img src={project.img} alt={project.alt} className="project-img" />}
                     </div>
                 ))}
             </div>

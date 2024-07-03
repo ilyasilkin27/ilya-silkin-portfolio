@@ -47,6 +47,38 @@ body.light {
     font-size: 1.5rem;
 }
 
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    transition: background-color 0.3s;
+}
+
+.project-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.project-img {
+    width: 900px;
+    height: auto;
+}
+
+.btns {
+    display: flex;
+    gap: 10px;
+}
+
 .viewCode {
     background-color: #1f1f1f;
     color: #fff;
