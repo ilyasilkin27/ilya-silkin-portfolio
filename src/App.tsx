@@ -1,5 +1,6 @@
 import React from 'react';
 import About from './components/About';
+import TechStack from './components/TechStack';
 import Projects from './components/Projects';
 import LanguageSwitcher from './components/LanguageSwitcher';
 import ThemeSwitcher from './components/ThemeSwitcher';
@@ -13,6 +14,7 @@ const App: React.FC = () => {
                 <ThemeSwitcher />
             </div>
             <About />
+            <TechStack />
             <Projects />
         </div>
     );
