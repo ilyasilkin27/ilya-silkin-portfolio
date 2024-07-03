@@ -5,6 +5,9 @@ const projects = [
     {
         key: 'project1',
         link: 'https://github.com/peperopuripuri/react-chat',
+        demo: 'https://frontend-chat-ru.hexlet.app/',
+        img: require('../fixtures/react-chat.png'),
+        alt: 'react-chat',
     },
     {
         key: 'project2',
@@ -39,8 +42,12 @@ const Projects: React.FC = () => {
                     <div key={index} className="project-card">
                         <h3>{t(`projects.${project.key}`)}</h3>
                         <p>{t(`projects.${project.key}Description`)}</p>
+                        <img src={project.img} alt={project.alt}/>
                         <a href={project.link} target="_blank" rel="noopener noreferrer">
                             <button className='viewCode'>{t('button.viewCode')}</button>
+                        </a>
+                        <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                            <button className='demo'>{t('button.demo')}</button>
                         </a>
                     </div>
                 ))}
