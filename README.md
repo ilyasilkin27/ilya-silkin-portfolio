@@ -1,5 +1,5 @@
 [![Russian Version](https://img.shields.io/badge/Russian-README-red)](README.ru.md)
-[![Portfolio Link](https://ilya-silkin-portfolio.vercel.app/)]
+[Vercel Link](https://ilya-silkin-portfolio.vercel.app/)
 
 # Portfolio
 
