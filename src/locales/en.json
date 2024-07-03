@@ -19,8 +19,6 @@
         "project6Description": "A console application that takes JSON/YML/YAML documents and calculates their differences. The project focuses on parsing and formatting data, application architecture design, working with trees, and writing unit tests."
     },
     "button": {
-        "viewCode": "View Code",
-        "switchLanguage": "Switch Language",
-        "switchTheme": "Switch Theme"
+        "viewCode": "View Code"
     }
 }
