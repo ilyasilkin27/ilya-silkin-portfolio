@@ -9,12 +9,11 @@
     transition: background-color 0.3s;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 5px;
+    justify-content: center;
 }
 
 .switcher.on {
-    background-color: #333;
+    background-color: #1f1f1f;
     color: #fff;
 }
 
@@ -53,7 +52,7 @@
     background-color: #333;
 }
 
-.language-icon {
+.indicator {
     font-size: 12px;
     padding: 2px 5px;
     border-radius: 3px;

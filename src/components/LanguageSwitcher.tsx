@@ -21,9 +21,9 @@ const LanguageSwitcher: React.FC = () => {
             className={`switcher ${isEnglish ? 'on' : 'off'}`}
             onClick={toggleLanguage}
         >
-            <span className="language-icon">РУ</span>
+            <span className="indicator">РУ</span>
             <div className="slider"></div>
-            <span className="language-icon">EN</span>
+            <span className="indicator">EN</span>
         </button>
     );
 };

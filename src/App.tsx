@@ -4,7 +4,6 @@ import Projects from './components/Projects';
 import LanguageSwitcher from './components/LanguageSwitcher';
 import ThemeSwitcher from './components/ThemeSwitcher';
 import './styles/main.css';
-import './styles/light.css';
 
 const App: React.FC = () => {
     return (
