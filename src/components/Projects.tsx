@@ -54,7 +54,7 @@ const Projects: React.FC = () => {
                                 )}
                             </div>
                         </div>
-                        {project.img && <img src={project.img} alt={project.alt} className="project-img" />}
+                        <img src={project.img} alt={project.alt} className="project-img" />
                     </div>
                 ))}
             </div>
