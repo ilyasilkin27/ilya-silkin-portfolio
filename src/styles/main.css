@@ -4,11 +4,14 @@
 body, html {
     margin: 0;
     padding: 0;
-    background-color: #333;
-    color: #fff;
     font-family: 'Bebas Neue', 'Oswald';
     height: 100%;
     position: relative;
+}
+
+body.dark {
+    background-color: #333;
+    color: #fff;
 }
 
 body.light {
@@ -42,4 +45,26 @@ body.light {
 #projects {
     padding: 20px 10%;
     font-size: 1.5rem;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+    height: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border: 2px solid #fff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #333;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #333;
 }
