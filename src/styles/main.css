@@ -7,6 +7,7 @@ body, html {
     font-family: 'Bebas Neue', 'Oswald';
     height: 100%;
     position: relative;
+    width: 100%;
 }
 
 body.dark {
@@ -177,30 +178,35 @@ body.light {
     background: #333;
 }
 
-/* Media Queries for Mobile Devices */
-
-@media (max-width: 768px) {
-    .switchers {
-        right: 5%;
+@media screen and (max-width: 810px) {
+    .App {
+        align-items: center;
+        justify-content: flex-start;
+        padding: 20px;
     }
 
     #about {
         padding: 0 5%;
         font-size: 1.5rem;
-        min-width: 100%;
+        min-width: unset;
     }
 
     .tech-stack-container {
         padding: 0 5%;
+        gap: 15px;
+    }
+
+    .tech-item {
+        font-size: 40px;
     }
 
     #projects {
-        padding: 10px 5%;
-        font-size: 1.2rem;
+        padding: 20px 5%;
+        font-size: 1.3rem;
     }
 
     .project-list {
-        gap: 50px;
+        gap: 40px;
     }
 
     .project-card {
@@ -212,59 +218,41 @@ body.light {
         width: 100%;
     }
 
-    .project-img {
-        width: 100%;
-    }
-
     .btns {
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 480px) {
-    .switchers {
-        right: 2%;
-    }
-
-    #about {
-        padding: 0 2%;
-        font-size: 1.2rem;
-        min-width: 100%;
-    }
-
-    .tech-stack-container {
-        padding: 0 2%;
-    }
-
-    #projects {
-        padding: 10px 2%;
-        font-size: 1rem;
-    }
-
-    .project-list {
         gap: 20px;
-    }
-
-    .project-card {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .project-info p {
-        width: 100%;
-    }
-
-    .project-img {
-        width: 100%;
-    }
-
-    .btns {
-        flex-direction: column;
-        gap: 5px;
     }
 
     .viewCode, .demo {
-        padding: 5px 10px;
-        font-size: 1rem;
+        font-size: 1.2rem;
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tech-item {
+        font-size: 30px;
+    }
+
+    .viewCode, .demo {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+
+    #about {
+        font-size: 1.2rem;
+    }
+
+    .project-card {
+        gap: 15px;
+    }
+
+    .project-info p {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    .project-info h3 {
+        width: 100%;
+        font-size: 1.5rem;
     }
 }

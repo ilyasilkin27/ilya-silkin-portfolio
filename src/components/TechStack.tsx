@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaDocker, FaGitAlt, FaLinux } from 'react-icons/fa';
+import { BiLogoPostgresql } from "react-icons/bi";
 import { SiTypescript, SiWebpack, SiAnsible } from 'react-icons/si';
 
 interface Tech {
@@ -19,7 +20,8 @@ const TechStack: React.FC = () => {
     { icon: <FaDocker />, name: 'Docker', color: '#2496ED' },
     { icon: <SiAnsible />, name: 'Ansible', color: '#EE0000' },
     { icon: <FaGitAlt />, name: 'Git', color: '#F05032' },
-    { icon: <FaLinux />, name: 'Linux', color: '#FCC624' }
+    { icon: <FaLinux />, name: 'Linux', color: '#FCC624' },
+    { icon: <BiLogoPostgresql />, name: 'PostgreSQL', color: '#03DFFC' }
   ];
 
   return (
